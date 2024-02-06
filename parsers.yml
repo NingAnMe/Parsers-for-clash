@@ -65,7 +65,7 @@ parsers: # array
         lazy: true
         tolerance: 30
         
-      - name: Laboratory
+      - name: 🏢Laboratory
         type: select
         proxies:
          - DIRECT
@@ -281,10 +281,10 @@ parsers: # array
         
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
-        - IP-CIDR,30.30.30.0/24,Laboratory
-        - IP-CIDR,40.40.40.0/24,Laboratory
-        - IP-CIDR,50,50.50.0/24,Laboratory
-        - IP-CIDR,10,247.239.0/24,Laboratory
+        - IP-CIDR,30.30.30.0/24,🏢Laboratory
+        - IP-CIDR,40.40.40.0/24,🏢Laboratory
+        - IP-CIDR,50.50.50.0/24,🏢Laboratory
+        - IP-CIDR,10.247.239.0/24,🏢Laboratory
         - DOMAIN-SUFFIX,jdev.tw,🥷PROXY
         - DOMAIN-SUFFIX,omnivore.app,🥷PROXY
         - RULE-SET,youtube,🎎YouTube
